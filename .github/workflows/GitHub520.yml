@@ -41,7 +41,7 @@ jobs:
     - name: Check on failures
       if: steps.commit.outputs.status == 'failure'
       run: exit 1
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
+    #- name: Push changes
+    #  uses: ad-m/github-push-action@master
+    #  with:
+    #    github_token: ${{ secrets.GH_TOKEN }}
